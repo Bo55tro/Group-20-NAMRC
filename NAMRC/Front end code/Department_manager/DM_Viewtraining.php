@@ -1,5 +1,5 @@
 <?php
-include("C:\downloads\htdocs\NAMRC\Front end code\Department_manager\Viewtraining.php");
+include("C:\Downloads\GitHub\Group-20-NAMRC\NAMRC\Front end code\Department_manager\Viewtraining.php");;
 ?>
 <!DOCTYPE html>
 <html lang="en">
