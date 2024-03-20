@@ -18,7 +18,7 @@
 </nav>
 
 <!-- changed the field names to match the database attributes for the table "Certification" - done by Ariba !-->
-<form method="post" action="process_addcertification.php"> <!-- added a page of processing - done by Ariba !-->
+<form method="post" action="process_addcertification.php">  <!-- added a page of processing - done by Ariba !-->
     <div>
         <div class="inputlabel">
             
