@@ -1,0 +1,35 @@
+<!-- Viewing done by Ariba !-->
+
+<div class="container pb-5">
+    <main role="main" class="pb-3">
+        <h2>View Certifications:</h2><br>
+
+<div class="row">
+    <div class="col-5">
+        <table class="table table-bordered table-striped">
+            <thead class="table-dark">
+                <th style="min-width: 175px;">Certification Name</th> 
+                <th style="min-width: 175px;">Cell ID</th> 
+                </thead>
+           
+           
+            <?php
+            include 'viewtrainingSQL.php';
+            $Training = getTraining();
+
+                for ($i=0; $i<count($Training); $i++):
+            ?>
+            <tr>
+                <td><?php echo $Training[$i]['certification_name']?></td>
+                <td><?php echo $Training[$i]['cell_ID']?></td>
+                </body>
+                </tr>
+
+                    <?php
+                    endfor;
+                    ?>
+                </table>
+            </div>
+        </div>
+    </main>
+</div>

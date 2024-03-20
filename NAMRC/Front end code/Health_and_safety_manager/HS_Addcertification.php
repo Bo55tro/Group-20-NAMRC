@@ -22,14 +22,11 @@
     <div>
         <div class="inputlabel">
             
-            <label for="training_ID"><span>Training ID</span></label>
-            <input type="integer" id="training_ID" name="training_ID">
+            <label for="certification_name"><span>Certification Name</span></label>
+            <input type="text" id="certification_name" name="certification_name">
             
-            <label for="tech_ID"><span>Tech ID</span></label>
-            <input type="integer" id="tech_ID" name="tech_ID">
-
-            <label for="expiry_date"><span>Expiry Date</span></label>
-            <input type="date" id="expiry_date" name="expiry_date"> <!-- changed the format to date - done by ariba !-->
+            <label for="cell_ID"><span>Cell ID</span></label>
+            <input type="integer" id="cell_ID" name="cell_ID">
 
             <input type="submit" name="submit" value="Submit" class="addsubmit">
         </div>
