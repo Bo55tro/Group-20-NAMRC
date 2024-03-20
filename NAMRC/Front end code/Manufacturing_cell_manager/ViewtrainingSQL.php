@@ -2,7 +2,7 @@
 <?php
 function getTraining (){
     $arrayResult = array(); 
-    $db = new SQLite3("C:\downloads\GitHub\Group-20-NAMRC\NAMRC\NAMRC.db");
+    $db = new SQLite3('C:\xampp\htdocs\Group-20-NAMRC\NAMRC\NAMRC.db');
     $sql = "SELECT * FROM Training";
     $stmt = $db->prepare($sql);
     $result = $stmt->execute();

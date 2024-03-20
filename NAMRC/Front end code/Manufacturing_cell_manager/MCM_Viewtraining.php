@@ -1,5 +1,5 @@
 <?php
-include("C:\Downloads\GitHub\Group-20-NAMRC\NAMRC\Front end code\Manufacturing_cell_manager\Viewtraining.php");;
+include('C:\xampp\htdocs\Group-20-NAMRC\NAMRC\Front end code\Manufacturing_cell_manager\Viewtraining.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
