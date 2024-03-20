@@ -22,7 +22,7 @@
     <div>
         <div class="inputlabel">
             
-            <label for="certification_name"><span>Certification Name</span></label>
+            <label for="certification_name"><span>Certification Name</span></label> <!-- updated field names - ariba -->
             <input type="text" id="certification_name" name="certification_name">
             
             <label for="cell_ID"><span>Cell ID</span></label>
