@@ -20,7 +20,7 @@
 <!-- changed the field names to match the database attributes for the table "Certification" - done by Ariba !-->
 <form method="post" action="process_addcertification.php">  <!-- added a page of processing - done by Ariba !-->
     <div>
-        <div class="inputlabel">
+        <div class="inputlabel"> 
             
             <label for="certification_name"><span>Certification Name</span></label> <!-- updated field names - ariba -->
             <input type="text" id="certification_name" name="certification_name">
