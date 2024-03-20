@@ -15,13 +15,13 @@
            
             <?php
             include 'viewtrainingSQL.php';
-            $Training = getTraining();
+            $Certifications = getCertifications();
 
-                for ($i=0; $i<count($Training); $i++):
+                for ($i=0; $i<count($Certifications); $i++):
             ?>
             <tr>
-                <td><?php echo $Training[$i]['certification_name']?></td>
-                <td><?php echo $Training[$i]['cell_ID']?></td>
+                <td><?php echo $Certifications[$i]['certification_name']?></td>
+                <td><?php echo $Certifications[$i]['cell_ID']?></td>
                 </body>
                 </tr>
 
