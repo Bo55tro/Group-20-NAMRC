@@ -1,5 +1,4 @@
 <?php
-include('C:\xampp\htdocs\Group-20-NAMRC\NAMRC\Front end code\Home.html');
 
 $db = new SQLite3('C:\xampp\htdocs\Group-20-NAMRC\NAMRC\NAMRC.db');
 $sql = "SELECT training_ID, training_name FROM Training WHERE training_ID=:training_ID";
