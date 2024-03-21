@@ -1,8 +1,8 @@
+<!-- Delete function for the training 
 <?php
 
 $db = new SQLite3('C:\xampp\htdocs\Group-20-NAMRC\NAMRC\NAMRC.db');
 
-// Check if training_ID is provided
 if (isset($_GET['training_ID']) && is_numeric($_GET['training_ID'])) {
     $training_ID = $_GET['training_ID'];
 
@@ -20,7 +20,7 @@ if (isset($_GET['training_ID']) && is_numeric($_GET['training_ID'])) {
         $stmt = $db->prepare("DELETE FROM Training WHERE training_ID = :training_ID");
         $stmt->bindParam(':training_ID', $training_ID, SQLITE3_INTEGER);
         $stmt->execute();
-        header("Location: Viewtraining.php");
+        header("Location: HS_Viewtraining.php");
         exit();
     }
 } else {
