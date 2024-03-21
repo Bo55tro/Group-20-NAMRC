@@ -51,4 +51,4 @@ if (isset($_GET['training_ID']) && is_numeric($_GET['training_ID'])) {
         <?php endif; ?>
     </div>
 </div>
-<div class="form-group col-md-3"><a href="Viewtraining.php">Back</a></div>
+<div class="form-group col-md-3"><a href="HS_Viewtraining.php">Back</a></div>
