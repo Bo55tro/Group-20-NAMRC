@@ -1,6 +1,6 @@
 <!-- Viewing done by Ariba !-->
 <?php
-function getTraining (){
+function getCertifications (){
     $arrayResult = array(); 
     $db = new SQLite3('C:\xampp\htdocs\Group-20-NAMRC\NAMRC\NAMRC.db');
     $sql = "SELECT * FROM Certifications";
