@@ -10,6 +10,7 @@
             <thead class="table-dark">
                 <th style="min-width: 175px;">Training ID</th> 
                 <th style="min-width: 175px;">Training Name</th> 
+                <td colspan="2" align="center"> Action </td>
                 </thead>
            
            
@@ -22,6 +23,8 @@
             <tr>
                 <td><?php echo $Training[$i]['training_ID']?></td>
                 <td><?php echo $Training[$i]['training_name']?></td>
+                <td colspan="2" align="center">
+                <a href="deleteTraining.php?Assignment_ID=<?php echo $Assignment[$i]['Assignment_ID']; ?>"> Delete</a><td>
                 </body>
                 </tr>
 
