@@ -25,8 +25,8 @@ if (isset($_POST['delete'])){
 
 ?>
 
-<h2>Delete Dependent for <?php echo $_GET['training_ID'];?></h2><br>
-        <h4 style="color: red;">Are you sure want to delete this dependent?</h4><br>
+<h2>Delete Training For <?php echo $_GET['training_ID'];?></h2><br>
+        <h4 style="color: red;">Are you sure want to delete this training?</h4><br>
         
 <div class="row">
     <div class="col-11">
@@ -35,7 +35,7 @@ if (isset($_POST['delete'])){
                 <?php foreach($arrayResult as $row): ?>
                 <input type="hidden" name="training_name" value="<?php echo $row['training_name']; ?>">
                 <div class="form-group col-md-3">
-                    <label class="control-label labelFont">Test Result</label>
+                    <label class="control-label labelFont">Training Name</label>
                     <input class="form-control" type="text" name="training_name" value="<?php echo $row['training_name']; ?>">
                 </div>
                 <?php endforeach; ?>
