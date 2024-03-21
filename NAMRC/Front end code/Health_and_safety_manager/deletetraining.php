@@ -1,5 +1,5 @@
 <?php
-include('C:\xampp\htdocs\Group-20-NAMRC\NAMRC\Front end code\Health_and_safety_manager\Viewtraining.php');
+include('C:\xampp\htdocs\Group-20-NAMRC\NAMRC\Front end code\Health_and_safety_manager\HS_Home.php');
 
 $db = new SQLite3('C:\xampp\htdocs\Group-20-NAMRC\NAMRC\NAMRC.db');
 $sql = "SELECT training_ID, training_name FROM Training WHERE training_ID=:training_ID";
@@ -16,7 +16,7 @@ if (isset($_POST['delete'])){
 
     $db = new SQLite3('C:\xampp\htdocs\Group-20-NAMRC\NAMRC\NAMRC.db');
 
-    $stmt = "DELETE FROM Dependent WHERE training_ID = :training_ID";
+    $stmt = "DELETE FROM Training WHERE training_ID = :training_ID";
     $sql = $db->prepare($stmt);
     $sql->bindParam(':training_ID', $_POST['training_ID'], SQLITE3_NUM);
 
