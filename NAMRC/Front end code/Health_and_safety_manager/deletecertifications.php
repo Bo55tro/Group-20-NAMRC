@@ -17,7 +17,7 @@
 $db = new SQLite3('C:\xampp\htdocs\Group-20-NAMRC\NAMRC\NAMRC.db');
 
 if (isset($_GET['certification_ID']) && is_numeric($_GET['certification_ID'])) {
-    $training_ID = $_GET['certification_ID'];
+    $certification_ID = $_GET['certification_ID']; // Correct variable name
 
     $sql = "SELECT certification_ID, certification_name, cell_ID FROM Certifications WHERE certification_ID=:certification_ID";
     $stmt = $db->prepare($sql);
@@ -25,10 +25,18 @@ if (isset($_GET['certification_ID']) && is_numeric($_GET['certification_ID'])) {
     $result = $stmt->execute();
     $arrayResult = [];
 
+    // Fetch data
     while ($row = $result->fetchArray(SQLITE3_ASSOC)) {
         $arrayResult[] = $row;
     }
 
+    // Check if data exists for the given certification ID
+    if (count($arrayResult) == 0) {
+        echo "Certification not found.";
+        exit();
+    }
+
+    // If the form is submitted
     if (isset($_POST['delete'])) {
         $stmt = $db->prepare("DELETE FROM Certifications WHERE certification_ID = :certification_ID");
         $stmt->bindParam(':certification_ID', $certification_ID, SQLITE3_INTEGER);
@@ -40,8 +48,8 @@ if (isset($_GET['certification_ID']) && is_numeric($_GET['certification_ID'])) {
     echo "Invalid certification ID.";
     exit();
 }
-
 ?>
+
 
 <h2>Delete Certification For <?php echo $certification_ID; ?></h2><br>
 <h4 style="color: red;">Are you sure want to delete this training?</h4><br>
