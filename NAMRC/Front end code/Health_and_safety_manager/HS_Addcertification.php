@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+include('C:\xampp\htdocs\Group-20-NAMRC\NAMRC\Front end code\Health_and_safety_manager\Viewtraining.php');
+?>
 <html lang="en">
 <head>
     <title>Nuclear AMRC</title>
