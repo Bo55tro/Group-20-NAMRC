@@ -67,7 +67,7 @@ body {
     padding: 10px 30px;
     display: block;
     font-size: 24px;
-    border: 1px solid #999999; 
+    border: 1px solid indigo; /*change of colour*/
     border-top: none;
     box-sizing: border-box; 
 }
