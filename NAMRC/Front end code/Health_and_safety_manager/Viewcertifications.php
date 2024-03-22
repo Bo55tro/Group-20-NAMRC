@@ -35,7 +35,7 @@
                         ?>
                     </tbody>
                 </table>
-                <a href="../Viewtraining.php">Back</a>
+                <a href="../Health_and_safety_manager/Viewtraining.php">Back</a>
             </div>
         </div>
     </main>
