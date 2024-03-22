@@ -1,5 +1,14 @@
 <!-- Viewing done by Ariba !-->
 <link rel="stylesheet" href="../site.css"/>
+<nav class="navbar">
+    <ul>
+        <li><a href="HS_Home.php">Back</a></li>
+        <li><a href="HS_Viewcell.php">View cells</a></li>
+        <li><a href="HS_Viewtraining.php">View available training</a></li>
+        <li><a href="HS_Addcertification.php">Add certification & training</a></li>
+        <li class="right-link"><a href="../Home.html">Logout</a></li>
+    </ul>
+</nav>
 <div class="container pb-5">
     <main role="main" class="pb-3">
         <h2>View Certifications:</h2><br>
