@@ -36,5 +36,7 @@
             </div>
         </div>
     </main>
+    <a href="../Health_and_safety_manager/Viewcertifications.php">Next</a>
+
 </div>
 
