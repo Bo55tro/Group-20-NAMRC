@@ -1,4 +1,4 @@
-<!-- Delete function for the training 
+<!-- Delete function for the training -->
 <?php
 
 $db = new SQLite3('C:\xampp\htdocs\Group-20-NAMRC\NAMRC\NAMRC.db');
