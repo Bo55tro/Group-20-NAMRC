@@ -22,7 +22,7 @@
             include 'ViewemployeesSQL.php';
             $Employee = getEmployee();
 
-                for ($i=0; $i<count($Cell); $i++):
+                for ($i=0; $i<count($Employee); $i++):
             ?>
             <tr>
                 <td><?php echo $Cell[$i]['tech_fname']?></td>
