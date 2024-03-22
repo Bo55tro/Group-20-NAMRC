@@ -15,7 +15,7 @@
            
            
             <?php
-            include 'ViewcertifcationsSQL.php';
+            include 'viewcertifcationsSQL.php';
             $Certifications = getCertifications();
 
                 for ($i=0; $i<count($Certifications); $i++):
