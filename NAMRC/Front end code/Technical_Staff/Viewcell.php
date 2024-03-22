@@ -26,8 +26,8 @@
             <tr>
                 <td><?php echo $Cell[$i]['cell_ID']?></td>
                 <td><?php echo $Cell[$i]['cell_name']?></td>
-                <td><?php echo $Cell[$i]['MCM_fname']?></td>
-                <td><?php echo $Cell[$i]['MCM_lname']?></td>
+                <td><?php echo $Cell[$i]['tech_fname']?></td>
+                <td><?php echo $Cell[$i]['tech_lname']?></td>
                 <td colspan="2" align="center">
                 
                 </body>
