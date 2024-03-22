@@ -28,7 +28,7 @@
                 <td><?php echo $Employee[$i]['tech_fname']?></td>
                 <td><?php echo $Employee[$i]['tech_lname']?></td>
                 <td><?php echo $Employee[$i]['tech_email']?></td>
-                <td><?php echo $Employeel[$i]['tech_dob']?></td>
+                <td><?php echo $Employee[$i]['tech_dob']?></td>
                 <td colspan="2" align="center">
                 
                 </body>
