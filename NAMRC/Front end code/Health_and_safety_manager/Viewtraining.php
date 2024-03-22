@@ -37,4 +37,4 @@
         </div>
     </main>
 </div>
-<a href="../Health_and_safety_manager/HS_view.php">Next</a>
+<a href="../Health_and_safety_manager/Viewcertifications.php">Next</a>
