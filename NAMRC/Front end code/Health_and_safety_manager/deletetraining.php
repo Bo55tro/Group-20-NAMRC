@@ -1,4 +1,4 @@
-<!-- Delete function for the training -->
+<!-- Delete function for the trainingg -->
 <link rel="stylesheet" href="../site.css"/>
 <nav class="navbar">
     <ul>
