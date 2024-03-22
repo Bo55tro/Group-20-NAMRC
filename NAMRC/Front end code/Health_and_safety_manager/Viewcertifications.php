@@ -1,7 +1,5 @@
 <!-- Viewing done by Ariba !-->
-<?php
-include('C:\xampp\htdocs\Group-20-NAMRC\NAMRC\Front end code\Health_and_safety_manager\HS_view.php');
-?>
+<link rel="stylesheet" href="../site.css"/>
 <div class="container pb-5">
     <main role="main" class="pb-3">
         <h2>View Certifications:</h2><br>
