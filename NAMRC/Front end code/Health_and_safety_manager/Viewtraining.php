@@ -27,7 +27,7 @@
                 <a href="deletetraining.php?training_ID=<?php echo $Training[$i]['training_ID']; ?>"> Delete</a><td>
                 </body>
                 </tr>
-
+                <a href="../Health_and_safety_manager/Viewcertifications.php">Next</a>
 
                     <?php
                     endfor;
@@ -37,4 +37,4 @@
         </div>
     </main>
 </div>
-<a href="../Health_and_safety_manager/Viewcertifications.php">Next</a>
+

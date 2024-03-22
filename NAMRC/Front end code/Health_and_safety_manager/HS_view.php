@@ -20,6 +20,7 @@ include('C:\xampp\htdocs\Group-20-NAMRC\NAMRC\Front end code\Health_and_safety_m
     </ul>
 </nav>
 
+
 <img class="logo" src="../images/logo.png">
 
 <footer class="footertext">Contact tel:+44 (0)114 222 9900 &nbsp;&nbsp;&nbsp;email: enquiries@namrc.co.uk</footer>
