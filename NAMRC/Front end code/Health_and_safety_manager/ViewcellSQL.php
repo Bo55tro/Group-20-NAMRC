@@ -5,7 +5,7 @@ function getCell (){
     $db = new SQLite3('C:\xampp\htdocs\Group-20-NAMRC\NAMRC\NAMRC.db');
     $sql = "SELECT C.cell_ID, C.cell_name, M.MCM_fname, M.MCM_lname 
     FROM Cells c
-    INNER JOIN Manufacturing_Cell_Manager m ON C.MCM_ID = M.MCM_ID";
+    INNER JOIN 'Manufacturing Cell Manager' m ON C.MCM_ID = M.MCM_ID";
     $stmt = $db->prepare($sql);
     $result = $stmt->execute();
 
