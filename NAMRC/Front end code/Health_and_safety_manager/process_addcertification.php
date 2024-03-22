@@ -2,22 +2,20 @@
 session_start();
 
 try {
-    $db = new SQLite3('C:\downloads\htdocs\NAMRC\NAMRC.db'); //works for my database connection some people may need to change it for their directory - done by Ariba 
+    $db = new SQLite3('C:\xampp\htdocs\Group-20-NAMRC\NAMRC\NAMRC.db'); //works for my database connection some people may need to change it for their directory - done by Ariba 
 } catch (Exception $e) {
     die("Connection failed: " . $e->getMessage());
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    $trainingID = $_POST['trainingID'];
-    $techID = $_POST['tech_ID'];
-    $expiryDate = $_POST['expiry_date'];
+    $certificationName = $_POST['certificationName'];
+    $cellID = $_POST['cell_ID'];
 
-    $stmt = $db->prepare("INSERT INTO Certifications (training_ID, tech_ID, expiry_date) VALUES (?, ?, ?)");
+    $stmt = $db->prepare("INSERT INTO Certifications (certification_name, cell_ID) VALUES (?, ?)");
     
-    $stmt->bindParam(1, $trainingID, SQLITE3_INTEGER);
-    $stmt->bindParam(2, $techID, SQLITE3_INTEGER);
-    $stmt->bindParam(3, $expiryDate, SQLITE3_TEXT);
+    $stmt->bindParam(1, $certificationName, SQLITE3_TEXT);
+    $stmt->bindParam(2, $cellID, SQLITE3_INTEGER);
 
     $result = $stmt->execute();
 

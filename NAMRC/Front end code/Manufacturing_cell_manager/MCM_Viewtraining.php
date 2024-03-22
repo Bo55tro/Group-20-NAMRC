@@ -1,5 +1,5 @@
 <?php
-include("C:\downloads\htdocs\NAMRC\Front end code\Manufacturing_cell_manager\Viewtraining.php");
+include('C:\xampp\htdocs\Group-20-NAMRC\NAMRC\Front end code\Manufacturing_cell_manager\Viewtraining.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,7 +13,7 @@ include("C:\downloads\htdocs\NAMRC\Front end code\Manufacturing_cell_manager\Vie
 <nav class="navbar">
     <ul>
         <li><a href="MCM_Home.php">Back</a></li>
-        <li><a href="MCM_View.php">View</a></li>
+        <li><a href="MCM_View.php">View Employees</a></li>
         <li><a href="MCM_Viewcell.php">View cells</a></li>
         <li class="right-link"><a href="../Home.html">Logout</a></li>
     </ul>

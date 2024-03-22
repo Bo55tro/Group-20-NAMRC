@@ -2,7 +2,7 @@
 session_start();
 
 try {
-    $db = new SQLite3('C:\downloads\htdocs\NAMRC\NAMRC.db'); //works for my database connection some people may need to change it for their directory - done by Ariba 
+    $db = new SQLite3('C:\xampp\htdocs\Group-20-NAMRC\NAMRC\NAMRC.db'); //works for my database connection some people may need to change it for their directory - done by Ariba 
 } catch (Exception $e) {
     die("Connection failed: " . $e->getMessage());
 }
