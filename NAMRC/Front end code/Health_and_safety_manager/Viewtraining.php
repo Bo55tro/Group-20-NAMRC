@@ -2,7 +2,7 @@
 
 <div class="container pb-5">
     <main role="main" class="pb-3">
-        <h2>View Available Training:</h2><br>
+        <h2>View Training:</h2><br>
 
 <div class="row">
     <div class="col-5">
@@ -37,4 +37,4 @@
         </div>
     </main>
 </div>
-<a href="../Health_and_safety_manager/Viewcertifications.php">Next</a>
+<a href="../Health_and_safety_manager/HS_view.php">Next</a>
