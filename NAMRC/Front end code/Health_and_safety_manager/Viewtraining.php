@@ -25,6 +25,7 @@
                 <td><?php echo $Training[$i]['training_name']?></td>
                 <td colspan="2" align="center">
                 <a href="deletetraining.php?training_ID=<?php echo $Training[$i]['training_ID']; ?>"> Delete</a><td>
+                <a href="../Viewcertifications.php">Next</a>
                 </body>
                 </tr>
 
