@@ -36,7 +36,8 @@
             </div>
         </div>
     </main>
-    <a href="../Health_and_safety_manager/Viewcertifications.php">Next</a><p>Press the "Next" icon to view the next page of certifications.</p>
+    <p>Press the "Next" icon to view the list of certifications. <a href="../Health_and_safety_manager/Viewcertifications.php">Next</a></p>
+
 
 </div>
 

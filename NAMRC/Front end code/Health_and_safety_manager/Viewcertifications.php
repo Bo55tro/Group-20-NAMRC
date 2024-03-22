@@ -44,7 +44,7 @@
                         ?>
                     </tbody>
                 </table>
-                <a href="../Health_and_safety_manager/HS_view.php">Back</a>
+                <p>Press the "Back" icon to view the list of trainings. <a href="../Health_and_safety_manager/HS_view.php">Back</a></p>
             </div>
         </div>
     </main>

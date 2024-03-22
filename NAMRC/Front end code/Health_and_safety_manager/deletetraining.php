@@ -62,4 +62,4 @@ if (isset($_GET['training_ID']) && is_numeric($_GET['training_ID'])) {
         <?php endif; ?>
     </div>
 </div>
-<div class="form-group col-md-3"><a href="HS_Viewtraining.php">Back</a></div>
+<p>Press the "Back" icon to view the list of trainings. <div class="form-group col-md-3"><a href="HS_Viewtraining.php">Back</a></div></p>
