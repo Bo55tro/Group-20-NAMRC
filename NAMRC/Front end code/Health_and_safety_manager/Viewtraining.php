@@ -25,9 +25,9 @@
                 <td><?php echo $Training[$i]['training_name']?></td>
                 <td colspan="2" align="center">
                 <a href="deletetraining.php?training_ID=<?php echo $Training[$i]['training_ID']; ?>"> Delete</a><td>
-                <a href="C:\Users\ariba\OneDrive\Documents\GitHub\Group-20-NAMRC\NAMRC\Front end code\Health_and_safety_manager\Viewcertifications.php">Next</a>
                 </body>
                 </tr>
+
 
                     <?php
                     endfor;
@@ -37,3 +37,4 @@
         </div>
     </main>
 </div>
+<a href="../Health_and_safety_manager/Viewcertifications.php">Next</a>
