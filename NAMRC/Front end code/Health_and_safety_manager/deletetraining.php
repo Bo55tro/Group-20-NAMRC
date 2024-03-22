@@ -1,6 +1,8 @@
 <!-- Delete function for the training -->
 <?php
 
+include('C:\xampp\htdocs\Group-20-NAMRC\NAMRC\Front end code\Health_and_safety_manager\HS_view.php');
+
 $db = new SQLite3('C:\xampp\htdocs\Group-20-NAMRC\NAMRC\NAMRC.db');
 
 if (isset($_GET['training_ID']) && is_numeric($_GET['training_ID'])) {
