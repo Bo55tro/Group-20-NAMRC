@@ -61,7 +61,7 @@ body {
 }
 
 .navbar a {
-    color: navy;
+    color: navy; /*change of colour*/
     text-decoration: none;
     min-height: 80px;
     padding: 10px 30px;
@@ -73,7 +73,7 @@ body {
 }
 
 .navbar a:hover {
-    background-color: navy; 
+    background-color: #555; 
 }
 
 .right-link {
