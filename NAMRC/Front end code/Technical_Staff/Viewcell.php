@@ -10,8 +10,8 @@
             <thead class="table-dark">
                 <th style="min-width: 175px;">Cell ID</th> 
                 <th style="min-width: 175px;">Cell Name</th> 
-                <th style="min-width: 175px;">Manager First Name</th> 
-                <th style="min-width: 175px;">Manager Last Name</th> 
+                <th style="min-width: 175px;"> First Name</th> 
+                <th style="min-width: 175px;"> Last Name</th> 
                 <td colspan="2" align="center"> Action </td>
                 </thead>
            
