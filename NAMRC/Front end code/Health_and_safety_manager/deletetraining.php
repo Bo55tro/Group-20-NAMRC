@@ -1,7 +1,16 @@
 <!-- Delete function for the training -->
-<?php
+<link rel="stylesheet" href="../site.css"/>
+<nav class="navbar">
+    <ul>
+        <li><a href="HS_Home.php">Back</a></li>
+        <li><a href="HS_Viewcell.php">View cells</a></li>
+        <li><a href="HS_Viewtraining.php">View available training</a></li>
+        <li><a href="HS_Addcertification.php">Add certification & training</a></li>
+        <li class="right-link"><a href="../Home.html">Logout</a></li>
+    </ul>
+</nav>
 
-include('C:\xampp\htdocs\Group-20-NAMRC\NAMRC\Front end code\Health_and_safety_manager\HS_view.php');
+<?php
 
 $db = new SQLite3('C:\xampp\htdocs\Group-20-NAMRC\NAMRC\NAMRC.db');
 
