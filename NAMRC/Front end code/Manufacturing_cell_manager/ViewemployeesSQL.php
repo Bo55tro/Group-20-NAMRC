@@ -1,13 +1,16 @@
 <!-- Viewing done by Ariba !-->
 <?php
-function getCell (){
+function getEmployee (){
     $arrayResult = array(); 
     $db = new SQLite3('C:\xampp\htdocs\Group-20-NAMRC\NAMRC\NAMRC.db');
-    $sql = "SELECT C.cell_ID, C.cell_name
+    $sql = "SELECT TS.tech_ID, TS.tech_fname, TS.tech_lname, TS.tech_email, TS.tech_dob
     FROM 'Technical Staff' TS
     INNER JOIN 'Operator Certification' OC ON TS.tech_ID = OC.tech_ID
-    INNER JOIN Certifications Cert ON OC.certification_ID = Cert.certification_ID
-    INNER JOIN Cells C ON Cert.cell_ID = C.cell_ID;"; //where TS.tech_email = provided email
+    INNER JOIN Certifications Cer ON OC.certification_ID = Cer.certification_ID
+    INNER JOIN Cells C ON Cer.cell_ID = C.cell_ID
+    INNER JOIN 'Manufacturing_Cell_Manager' M ON C.MCM_ID = M.MCM_ID
+    WHERE M.MCM_ID = 1;
+    "; //where TS.tech_email = provided email
     $stmt = $db->prepare($sql);
     $result = $stmt->execute();
 

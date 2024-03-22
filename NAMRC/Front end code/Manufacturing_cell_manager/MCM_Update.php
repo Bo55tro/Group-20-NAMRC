@@ -9,7 +9,7 @@
 <body>
 <nav class="navbar">
     <ul>
-        <li><a href="MCM_View.php">View</a></li>
+        <li><a href="MCM_View.php">View Employees</a></li>
         <li><a href="MCM_Viewtraining.php">View available training</a></li>
         <li class="right-link"><a href="../Home.html">Logout</a></li>
     </ul>

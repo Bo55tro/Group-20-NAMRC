@@ -13,7 +13,7 @@ include('C:\xampp\htdocs\Group-20-NAMRC\NAMRC\Front end code\Manufacturing_cell_
 <nav class="navbar">
     <ul>
         <li><a href="MCM_Home.php">Back</a></li>
-        <li><a href="MCM_View.php">View</a></li>
+        <li><a href="MCM_View.php">View Employees</a></li>
         <li><a href="MCM_Viewcell.php">View cells</a></li>
         <li class="right-link"><a href="../Home.html">Logout</a></li>
     </ul>
