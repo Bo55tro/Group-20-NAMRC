@@ -205,10 +205,13 @@ footer{
     width: 200px;
     margin-top: 100px; 
     margin-left: 20px;
+    font-family: "Helvetica", sans-serif; /*font change - done by ariba */
 }
+
 .inputlabel label {
     margin-bottom: 20px;
     margin-top: 20px;
+    font-family: "Helvetica", sans-serif; /*font change - done by ariba */
 }
 
 .inputlabel2 {
@@ -218,11 +221,14 @@ footer{
     width: 200px;
     display: flex;
     flex-direction: column;
+    font-family: "Helvetica", sans-serif; /*font change - done by ariba */
+    
 }
 
 .inputlabel2 label {
     margin-bottom: 20px;
     margin-top: 20px;
+    font-family: "Helvetica", sans-serif; /*font change - done by ariba */
 }
 
 .addsubmit{
@@ -233,6 +239,7 @@ footer{
     height: 30px;
     top: 450px;
     left: 30px;
+    font-family: "Helvetica", sans-serif; /*font change - done by ariba */
 }
 /*Home page elements */
 
