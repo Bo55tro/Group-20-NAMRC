@@ -268,8 +268,8 @@ table, th, td {
     border: 1px solid;
   }
   table {
-    width:100%;
-    max-height: 80vh; 
+    width:80%;
+    max-height: 70vh; 
     overflow-y: auto;
     margin-bottom: 5%;
     margin-left: 9%;
