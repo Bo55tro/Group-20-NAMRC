@@ -67,10 +67,10 @@ body {
     padding: 10px 30px;
     display: block;
     font-size: 24px;
+    font-family: "Helvetica", sans-serif; /*font change - done by ariba */
     border: 1px solid purple; /*change of colour - done by ariba */
     border-top: none;
     box-sizing: border-box; 
-    font: helvetica; /*font change - done by ariba */
 }
 
 .navbar a:hover {
