@@ -61,15 +61,16 @@ body {
 }
 
 .navbar a {
-    color: navy; /*change of colour*/
+    color: navy; /*change of colour - done by ariba */
     text-decoration: none;
     min-height: 80px;
     padding: 10px 30px;
     display: block;
     font-size: 24px;
-    border: 1px solid purple; /*change of colour*/
+    border: 1px solid purple; /*change of colour - done by ariba */
     border-top: none;
     box-sizing: border-box; 
+    font: helvetica; /*font change - done by ariba */
 }
 
 .navbar a:hover {
