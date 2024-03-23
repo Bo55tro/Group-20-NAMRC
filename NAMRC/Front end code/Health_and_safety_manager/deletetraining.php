@@ -1,4 +1,4 @@
-<!-- Delete function for the trainingg -->
+<!-- Delete function for the trainingg done by ariba -->
 <link rel="stylesheet" href="../site.css"/>
 <nav class="navbar">
     <ul>

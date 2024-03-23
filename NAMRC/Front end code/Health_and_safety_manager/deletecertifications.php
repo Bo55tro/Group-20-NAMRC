@@ -1,4 +1,4 @@
-<!-- Delete function for the certification -->
+<!-- Delete function for the certification done by ariba -->
 
 <link rel="stylesheet" href="../site.css"/>
 <nav class="navbar">

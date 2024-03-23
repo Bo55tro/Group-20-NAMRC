@@ -1,3 +1,5 @@
+<!-- process of adding a training done by ariba -->
+
 <?php
 session_start();
 
