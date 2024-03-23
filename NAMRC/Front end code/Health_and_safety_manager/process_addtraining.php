@@ -23,11 +23,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit();
 
     } else {
-        header("Location: medicalrecord_unsuccessful.php");
+        header("Location: addtraining_unsuccessful.php");
         exit();
     }
 } else {
-    header("Location: createmedicalrecord.php");
+    header("Location: HS_Addtraining.php");
     exit();
 }
 ?>
