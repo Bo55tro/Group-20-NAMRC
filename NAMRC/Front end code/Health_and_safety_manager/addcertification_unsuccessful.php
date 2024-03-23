@@ -19,9 +19,16 @@
 
 <div class="content">
     <h2>Certification was unsuccessfully added. Please try again.</h2>
-    <a href="HS_Addcertification.php">Next</a>
-    <a href="../Home.html">Back</a>
+    <form method="post" action="HS_Addcertification.php">
+        <input type="submit" name="Next" value="Next" class="returnbutton">
+    </form>
+    <form method="post" action="../Home.html">
+        <input type="submit" name="Back" value="Back" class="returnbutton">
+    </form>
 </div>
+
+<img class="logo" src="../images/logo.png">
+<footer class="footertext">Contact tel:+44 (0)114 222 9900 &nbsp;&nbsp;&nbsp;email: enquiries@namrc.co.uk</footer>
 
 </body>
 </html>

@@ -287,6 +287,20 @@ table, th, td {
     margin-bottom: 7%;
 }
 
+/*CSS for the unsuccsesful certification - By Luke*/
 .content{
-    top: 5%;
+    margin-top: 35px;
+    padding-top: 35px;
+    font-family: "Helvetica", sans-serif;
+}
+.returnbutton {
+    padding: 10px 20px;
+    background-color: #009FE2;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px; 
+}
+
+.content form {
+    display: inline-block;
 }
