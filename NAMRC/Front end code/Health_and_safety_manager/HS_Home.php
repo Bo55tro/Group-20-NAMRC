@@ -9,7 +9,7 @@
 <body>
 <nav class="navbar">
     <ul>
-        <li><a href="HS_View.php">View</a></li>
+        <li><a href="HS_View.php">View employees</a></li>
         <li><a href="HS_Viewcell.php">View cells</a></li>
         <li><a href="HS_Viewtraining.php">View available training</a></li>
         <li><a href="HS_Addcertification.php">Add certification & training</a></li> <!-- changed to training as well to make it in one label - done by ariba !-->

@@ -13,7 +13,7 @@ include('C:\xampp\htdocs\Group-20-NAMRC\NAMRC\Front end code\Technical_Staff\Vie
 <nav class="navbar">
     <ul>
         <li><a href="Technical_Home.php">Back</a></li>
-        <li><a href="Technical_View.php">View</a></li>
+        <li><a href="Technical_View.php">View employees</a></li>
         <li><a href="Technical_Viewtraining.php">View available training</a></li>
         <li class="right-link"><a href="../Home.html">Logout</a></li>
     </ul>

@@ -13,7 +13,7 @@ include('C:\xampp\htdocs\Group-20-NAMRC\NAMRC\Front end code\Health_and_safety_m
 <nav class="navbar">
     <ul>
         <li><a href="HS_Home.php">Back</a></li>
-        <li><a href="HS_view.php">View</a></li>
+        <li><a href="HS_view.php">View employees</a></li>
         <li><a href="HS_Viewcell.php">View cells</a></li>
         <li><a href="HS_Addcertification.php">Add certification & training</a></li>
         <li class="right-link"><a href="../Home.html">Logout</a></li>

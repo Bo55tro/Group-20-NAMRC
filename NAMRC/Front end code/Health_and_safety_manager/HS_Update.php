@@ -9,7 +9,7 @@
 <body>
 <nav class="navbar">
     <ul>
-        <li><a href="HS_View.php">View</a></li>
+        <li><a href="HS_View.php">View employees</a></li>
         <li><a href="HS_Viewtraining.php">View available training</a></li>
         <li><a href="HS_Addcertification.php">Add certification</a></li>
         <li class="right-link"><a href="../Home.html">Logout</a></li>
