@@ -100,8 +100,11 @@ footer{
 /* login */
 
 .loginnavbar{
+    color: navy;
     background-color: #ffffff;
     overflow: hidden;
+    font-family: "Helvetica", sans-serif; /*font change - done by ariba */
+    border: 1px solid purple; /*change of colour - done by ariba */
 }
 
 .loginnavbar ul {
