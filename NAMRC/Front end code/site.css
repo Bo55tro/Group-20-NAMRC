@@ -278,6 +278,7 @@ footer{
     top: 100px;
     left: 75px;
     font-size: 150%;
+    font-family: "Helvetica", sans-serif; /*font change - done by ariba */
 }
 
 /* Table CSS added for the viewing - By Ariba */
