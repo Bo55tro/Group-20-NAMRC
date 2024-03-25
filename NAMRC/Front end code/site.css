@@ -140,6 +140,7 @@ footer{
     width: 100px;
     height: 75px;
     left: 20px;
+    font-family: "Helvetica", sans-serif; /*font change - done by ariba */
 }
 
 .login{
@@ -149,6 +150,7 @@ footer{
     width: 50%;
     height: 75%;
     background-color: white;
+    font-family: "Helvetica", sans-serif; /*font change - done by ariba */
 }
 
 .login_header {
@@ -159,6 +161,7 @@ footer{
     position: absolute;
     left: 0;
     width: 100%; 
+    font-family: "Helvetica", sans-serif; /*font change - done by ariba */
 }
 
 .Email{
@@ -166,6 +169,7 @@ footer{
     top: 15%;
     left: 20%;
     font-size: 25px;
+    font-family: "Helvetica", sans-serif; /*font change - done by ariba */
 }
 
 .Log{
@@ -173,6 +177,7 @@ footer{
     top: 40%;
     left: 20%;
     font-size: 25px;
+    font-family: "Helvetica", sans-serif; /*font change - done by ariba */
 }
 
 .loginsubmit{
@@ -183,6 +188,7 @@ footer{
     color: white;
     width: 75px;
     height: 30px;
+    font-family: "Helvetica", sans-serif; /*font change - done by ariba */
 }
 
 /* input labels*/
@@ -191,12 +197,14 @@ footer{
     position: absolute;
     top: 28%;
     left: 20%;
+    font-family: "Helvetica", sans-serif; /*font change - done by ariba */
 }
 
 .passwordlabel{
     position: absolute;
     top: 53%;
     left: 20%;
+    font-family: "Helvetica", sans-serif; /*font change - done by ariba */
 }
 
 .inputlabel {
