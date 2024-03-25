@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="../site.css"/>
     </head>
+
+    <form method="post" action="process_login.php">
     <body>
         <nav class = "loginnavbar">
         <ul>
