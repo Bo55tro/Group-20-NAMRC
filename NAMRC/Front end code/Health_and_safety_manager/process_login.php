@@ -17,7 +17,7 @@ $stmt->bindValue(':email', $email, SQLITE3_TEXT);
 $result = $stmt->execute();
 
 if ($row = $result->fetchArray(SQLITE3_ASSOC)) {
-    if ($row['password'] === $password) {
+    if ($row['username'] === $password) {
         $_SESSION['logged_in'] = true;
         header("Location: HS_Home.php");
         exit();
