@@ -25,10 +25,10 @@
         <div class="inputlabel"> 
             
             <label for="certification_name"><span>Certification Name</span></label> <!-- updated field names - ariba naveed-->
-            <input type="text" id="certification_name" name="certification_name">
+            <input type="text" id="certification_name" name="certificationName">
             
             <label for="cell_ID"><span>Cell ID</span></label>
-            <input type="integer" id="cell_ID" name="cell_ID">
+            <input type="text" id="cell_ID" name="cell_ID">
 
             <input type="submit" name="submit" value="Submit" class="addsubmit">
         </div>
