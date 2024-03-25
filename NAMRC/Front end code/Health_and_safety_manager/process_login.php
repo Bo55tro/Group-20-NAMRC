@@ -9,7 +9,7 @@ if (!$db) {
 }
 
 $email = $_POST["email"];
-$password = $_POST["username"];
+$password = $_POST["password"];
 
 // SQL query to select the emails from the table 
 $stmt = $db->prepare("SELECT * FROM HSM WHERE HSM_email = :email");
@@ -17,7 +17,7 @@ $stmt->bindValue(':email', $email, SQLITE3_TEXT);
 $result = $stmt->execute();
 
 if ($row = $result->fetchArray(SQLITE3_ASSOC)) {
-    if ($row['username'] === $password) {
+    if ($row['password'] === $password) {
         $_SESSION['logged_in'] = true;
         header("Location: HS_Home.php");
         exit();
