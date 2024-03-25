@@ -1,3 +1,4 @@
+<!-- processing the HSM database details and created a SQL query to select all details - Done by ARIBA -->
 <?php
 session_start();
 
