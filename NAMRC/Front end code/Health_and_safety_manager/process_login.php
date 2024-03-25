@@ -12,7 +12,7 @@ $email = $_POST["email"];
 $password = $_POST["username"];
 
 // SQL query to select the emails from the table 
-$stmt = $db->prepare("SELECT * FROM Health and Safety Managers, Officers WHERE HSM_email = :email");
+$stmt = $db->prepare("SELECT * FROM HSM WHERE HSM_email = :email");
 $stmt->bindValue(':email', $email, SQLITE3_TEXT);
 $result = $stmt->execute();
 
