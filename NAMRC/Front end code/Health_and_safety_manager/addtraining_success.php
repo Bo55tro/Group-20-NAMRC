@@ -1,4 +1,4 @@
-<!-- Add training success done by ariba -->
+<!-- Add certificate success done by ariba -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,9 +18,16 @@
 </nav>
 
 <div class="content">
-    <h2>Please select the "Back" icon to return to the home page.</h2>
-    <a href="../Home.html">Back</a>
+    <h2>Training was successfully added. Press the "Next" icon to add certification requirements.</h2>
+    <form method="post" action="HS_Addrequirements.php">
+        <input type="submit" name="Next" value="Next" class="returnbutton">
+    </form>
+    <form method="post" action="../Home.html">
+        <input type="submit" name="Back" value="Back" class="returnbutton">
+    </form>
 </div>
 
 </body>
 </html>
+
+

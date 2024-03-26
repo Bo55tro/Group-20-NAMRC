@@ -18,9 +18,13 @@
 </nav>
 
 <div class="content">
-    <h2>To add a training, please select the "Next" icon. If not, please select the "Back" icon to return to the home page.</h2>
-    <a href="HS_Addtraining.php">Next</a>
-    <a href="../Home.html">Back</a>
+    <h2>Certification was successfully added. Press the "Next" icon to add a training.</h2>
+    <form method="post" action="HS_Addtraining.php">
+        <input type="submit" name="Next" value="Next" class="returnbutton">
+    </form>
+    <form method="post" action="../Home.html">
+        <input type="submit" name="Back" value="Back" class="returnbutton">
+    </form>
 </div>
 
 </body>

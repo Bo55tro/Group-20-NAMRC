@@ -1,4 +1,4 @@
-<!-- Add certificate unsuccess done by ariba -->
+<!-- Add certificate success done by ariba -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,14 +18,15 @@
 </nav>
 
 <div class="content">
-    <h2>Certification was unsuccessfully added. Please try again.</h2>
+    <h2>Certification was successfully added. Press the "Next" icon to add a training.</h2>
+    <form method="post" action="HS_Addrequirements.php">
+        <input type="submit" name="Next" value="Next" class="returnbutton">
+    </form>
     <form method="post" action="HS_Addcertification.php">
         <input type="submit" name="Back" value="Back" class="returnbutton">
     </form>
 </div>
 
-<img class="logo" src="../images/logo.png">
-<footer class="footertext">Contact tel:+44 (0)114 222 9900 &nbsp;&nbsp;&nbsp;email: enquiries@namrc.co.uk</footer>
-
 </body>
 </html>
+
