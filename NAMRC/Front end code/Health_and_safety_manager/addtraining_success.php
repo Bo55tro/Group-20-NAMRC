@@ -22,7 +22,7 @@
     <form method="post" action="HS_Addrequirements.php">
         <input type="submit" name="Next" value="Next" class="returnbutton">
     </form>
-    <form method="post" action="../Home.html">
+    <form method="post" action="HS_Home.php">
         <input type="submit" name="Back" value="Back" class="returnbutton">
     </form>
 </div>

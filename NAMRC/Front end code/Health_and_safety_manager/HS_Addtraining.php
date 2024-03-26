@@ -23,7 +23,7 @@
         <div class="inputlabel">
             
             <label for="training_name"><span>Training Name</span></label>
-            <input type="text" id="training_name" name="training_name">
+            <input type="text" id="training_name" name="training_name" required>
 
             <input type="submit" name="submit" value="Submit" class="addsubmit">
         </div>
