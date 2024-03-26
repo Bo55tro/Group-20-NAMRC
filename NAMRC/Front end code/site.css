@@ -156,6 +156,7 @@ footer{
     height: 75%;
     background-color: white;
     font-family: "Helvetica", sans-serif; /*font change - done by ariba */
+    border: black; /*border colour change - done by ariba */ 
 }
 
 .login_header {
