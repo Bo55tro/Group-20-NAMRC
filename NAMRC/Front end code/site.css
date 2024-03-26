@@ -167,6 +167,7 @@ footer{
     left: 0;
     width: 100%; 
     font-family: "Helvetica", sans-serif; /*font change - done by ariba */
+    border: black; /*border colour change - done by ariba */ 
 }
 
 .Email{
