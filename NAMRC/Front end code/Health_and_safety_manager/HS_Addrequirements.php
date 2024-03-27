@@ -29,6 +29,11 @@
             <label for="cell_ID"><span>Cell ID</span></label>
             <input type="text" id="cell_ID" name="cell_ID" required>
 
+            <label for="cell_ID"><span>Certification Length</span></label> 
+            <input type="text" id="cell_ID" name="cell_ID" required>
+
+
+
             <input type="submit" name="submit" value="Submit" class="addsubmit">
         </div>
     </div>
