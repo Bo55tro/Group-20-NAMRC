@@ -1,6 +1,3 @@
-<?php
-include('C:\xampp\htdocs\Group-20-NAMRC\NAMRC\Front end code\Technical_Staff\Viewtraining.php');
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
