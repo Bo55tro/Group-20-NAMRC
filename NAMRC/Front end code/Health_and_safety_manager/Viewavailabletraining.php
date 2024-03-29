@@ -1,6 +1,6 @@
 <!-- Viewing done by Ariba !-->
 
-<div class="container pb-5">
+<!-- <div class="container pb-5">
     <main role="main" class="pb-3">
         <h2>View Available Training:</h2><br>
 
@@ -37,5 +37,5 @@
         </div>
     </main>
 
-</div>
+</div> -->
 
