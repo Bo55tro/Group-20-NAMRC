@@ -1,8 +1,16 @@
 <!-- Viewing done by Ariba !-->
-
+<link rel="stylesheet" href="../site.css"/>
+<nav class="navbar">
+<ul>
+        <li><a href="Technical_Home.php">Back</a></li>
+        <li><a href="Technical_view.php">View employees</a></li>
+        <li><a href="Technical_Viewcell.php">View cells</a></li>
+        <li class="right-link"><a href="../Home.html">Logout</a></li>
+    </ul>
+</nav>
 <div class="container pb-5">
     <main role="main" class="pb-3">
-        <h2>View Available Training:</h2><br>
+        <h2>View Training:</h2><br>
 
 <div class="row">
     <div class="col-5">
@@ -22,8 +30,10 @@
             <tr>
                 <td><?php echo $Training[$i]['training_ID']?></td>
                 <td><?php echo $Training[$i]['training_name']?></td>
+                <td colspan="2" align="center">
                 </body>
                 </tr>
+              
 
                     <?php
                     endfor;
@@ -32,4 +42,8 @@
             </div>
         </div>
     </main>
+    <div class= "tablelink">Press the "Next" icon to view the list of certifications. <a href="../Technical_Staff/Viewcertifications.php">Next</a></div>
+
+
 </div>
+
