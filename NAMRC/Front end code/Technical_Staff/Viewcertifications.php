@@ -42,7 +42,7 @@
                         ?>
                     </tbody>
                 </table>
-                <p>Press the "Back" icon to view the list of trainings. <a href="../Technical_Staff/Technical_View.php">Back</a></p>
+                <p>Press the "Back" icon to view the list of trainings. <a href="../Technical_Staff/Viewtraining.php">Back</a></p>
             </div>
         </div>
     </main>

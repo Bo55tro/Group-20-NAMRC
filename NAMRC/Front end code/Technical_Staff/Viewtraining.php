@@ -30,7 +30,6 @@
             <tr>
                 <td><?php echo $Training[$i]['training_ID']?></td>
                 <td><?php echo $Training[$i]['training_name']?></td>
-                <td colspan="2" align="center">
                 </body>
                 </tr>
               
