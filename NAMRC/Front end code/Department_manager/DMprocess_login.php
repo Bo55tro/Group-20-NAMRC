@@ -29,5 +29,7 @@ if ($row = $result->fetchArray(SQLITE3_ASSOC)) {
     echo "Email not recognized as a Department Manager";
 }
 
+
+ 
 $db->close();
 ?>
