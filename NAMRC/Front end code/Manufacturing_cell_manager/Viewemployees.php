@@ -29,7 +29,7 @@
             include 'ViewemployeesSQL.php';
             $Employee = getEmployee();
 
-            for ($i=0; $i<count($Cell); $i++):
+            for ($i=0; $i<count($Employee); $i++):
 
             foreach ($Employee as $row)
             ?>
@@ -42,7 +42,7 @@
                 <td><?php echo $Employee[$i]['address_id']?></td>
                 <td><?php echo $Employee[$i]['tech_dob']?></td>
                 <td><?php echo $Employee[$i]['DEP_ID']?></td>
-                <td>update</td>
+                <td><a href="MCM_Update.php?tech_ID=<?php echo $row['tech_ID'];?>">Update</a></td>
                 <td colspan="2" align="center">
                 
                 </body>
