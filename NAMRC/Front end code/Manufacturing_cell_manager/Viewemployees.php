@@ -28,6 +28,8 @@
             include 'ViewemployeesSQL.php';
             $Employee = getEmployee();
 
+            
+
             for ($i=0; $i<count($Employee); $i++):
 
                 echo "<table border='1'>";
@@ -44,7 +46,8 @@
             
                     echo "<th>Update</th>";
 
-                    echo "</tr>"
+                    echo "</tr>";
+            
             ?>
             <tr>
                 <td><?php echo $Employee[$i]['tech_ID']?></td>
