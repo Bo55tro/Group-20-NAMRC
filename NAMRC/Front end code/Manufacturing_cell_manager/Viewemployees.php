@@ -10,15 +10,15 @@
     <div class="col-5">
         <table class="table table-bordered table-striped">
             <thead class="table-dark">
-                <th style="min-width: 175px;">Tech ID</th> 
-                <th style="min-width: 175px;">First Name</th>
-                <th style="min-width: 175px;">Middle Name</th>  
-                <th style="min-width: 175px;">Last Name</th> 
+                <th style="min-width: 75px;">Tech ID</th> 
+                <th style="min-width: 75px;">First Name</th>
+                <th style="min-width: 75px;">Middle Name</th>  
+                <th style="min-width: 75px;">Last Name</th> 
                 <th style="min-width: 175px;">Email</th> 
-                <th style="min-width: 175px;">Password</th>
-                <th style="min-width: 175px;">Address ID</th>  
-                <th style="min-width: 175px;">Dob</th> 
-                <th style="min-width: 175px;">Department ID</th> 
+                <th style="min-width: 75px;">Password</th>
+                <th style="min-width: 75px;">Address ID</th>  
+                <th style="min-width: 75px;">Dob</th> 
+                <th style="min-width: 75px;">Department ID</th> 
            
                 <td colspan="2" align="center"> Action </td>
                 </thead>
