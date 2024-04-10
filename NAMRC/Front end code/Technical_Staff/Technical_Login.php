@@ -18,7 +18,7 @@
             <div class="login_header">Login</div> 
             <div class ="Email">Email</div>
             <div class ="Log">Password</div>
-            <form method="post" action="Technical_Home.php">
+            <form method="post" action="process_login.php">
                 <div>
                 <div class="emaillabel">
                         <input type="text" id="EMAIL" name="email">
