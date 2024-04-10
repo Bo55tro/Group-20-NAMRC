@@ -29,7 +29,7 @@
             include 'ViewemployeesSQL.php';
             $Employee = getEmployee();
 
-            for ($i=0; $i<count($Cell); $i++):
+            for ($i=0; $i<count($Employee); $i++):
 
             foreach ($Employee as $row)
             ?>
