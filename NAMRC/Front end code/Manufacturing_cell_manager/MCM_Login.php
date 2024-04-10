@@ -24,7 +24,7 @@
                         <input type="text" id="EMAIL" name="email">
                     </div>
                     <div class="passwordlabel">
-                        <input type="password" id="username" name="username">
+                        <input type="password" id="password" name="password">
                     </div>
                     <input type="submit" name="submit" value="Submit" class="loginsubmit">
                 </div>
