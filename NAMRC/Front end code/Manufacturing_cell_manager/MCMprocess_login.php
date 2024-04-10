@@ -27,6 +27,6 @@ if ($row = $result->fetchArray(SQLITE3_ASSOC)) {
     }
 } else {
     echo "<h2>Email not recognized as a Manufacturing Cell Manager</h2>";
-
+}
 $db->close();
 ?>
