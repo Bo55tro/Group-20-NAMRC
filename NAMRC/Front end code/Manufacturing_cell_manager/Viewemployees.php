@@ -1,6 +1,5 @@
 <!-- Viewing done by Ariba !-->
 <body>
-<div class="paragraph">Here you can view the employees within your cell</div>
 </body>
 <div class="container pb-5">
     <main role="main" class="pb-3">
