@@ -18,52 +18,15 @@ $stmt->bindValue(':email', $email, SQLITE3_TEXT);
 $result = $stmt->execute();
 
 if ($row = $result->fetchArray(SQLITE3_ASSOC)) {
-    // Fetch the row
-    if ($row = $result->fetchArray(SQLITE3_ASSOC)) {
-        // Check if password matches
-        if ($row['DM_password'] === $password) {
-            $_SESSION['logged_in'] = true;
-            header("Location: DM_Home.php");
-            exit();
-        } else {
-            ?>
-            <!DOCTYPE html>
-            <html>
-            <head>
-                <title>Login Error</title>
-            </head>
-            <body>
-                <h2>Invalid username or password</h2>
-            </body>
-            </html>
-            <?php
-        }
+    if ($row['MCM_password'] === $password) {
+        $_SESSION['logged_in'] = true;
+        header("Location:MCM_Home.php");
+        exit();
     } else {
-        ?>
-        <!DOCTYPE html>
-        <html>
-        <head>
-            <title>Login Error</title>
-        </head>
-        <body>
-            <h2>Email not recognized as a Department Manager</h2>
-        </body>
-        </html>
-        <?php
+        echo"<h2>Invalid username or password</h2>";
     }
 } else {
-    ?>
-    <!DOCTYPE html>
-    <html>
-    <head>
-        <title>Error</title>
-    </head>
-    <body>
-        <h2>Error executing query</h2>
-    </body>
-    </html>
-    <?php
+    echo "<h2>Email not recognized as a Manufacturing Cell Manager</h2>";
 }
-
 $db->close();
 ?>
