@@ -19,7 +19,7 @@
                 <th style="min-width: 75px;">Dob</th> 
                 <th style="min-width: 75px;">Department ID</th> 
            
-                <td colspan="2" align="center"> Action </td>
+                
                 </thead>
            
                 
@@ -28,7 +28,21 @@
             include 'ViewemployeesSQL.php';
             $Employee = getEmployee();
 
-                for ($i=0; $i<count($Employee); $i++):
+            for ($i=0; $i<count($Employee); $i++):
+
+                echo "<table border='1'>";
+
+                echo "<tr>";
+            
+                for ($i = 0; $i < $result->numColumns(); $i++) {
+            
+                    $columnName = $result->columnName($i);
+            
+                    echo "<th>$columnName</th>";
+            
+                }
+            
+                    echo "<th>Update</th>";
             ?>
             <tr>
                 <td><?php echo $Employee[$i]['tech_ID']?></td>
