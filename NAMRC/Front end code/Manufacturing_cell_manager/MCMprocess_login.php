@@ -20,7 +20,7 @@ $result = $stmt->execute();
 if ($row = $result->fetchArray(SQLITE3_ASSOC)) {
     if ($row['MCM_password'] === $password) {
         $_SESSION['logged_in'] = true;
-        header("Location: MCM_Home.php");
+        header("Location:MCM_Home.php");
         exit();
     } else {
         echo "Invalid username or password";
