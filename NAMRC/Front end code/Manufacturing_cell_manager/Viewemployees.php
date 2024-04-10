@@ -10,10 +10,15 @@
     <div class="col-5">
         <table class="table table-bordered table-striped">
             <thead class="table-dark">
-                <th style="min-width: 175px;">First Name</th> 
+                <th style="min-width: 175px;">Tech ID</th> 
+                <th style="min-width: 175px;">First Name</th>
+                <th style="min-width: 175px;">Middle Name</th>  
                 <th style="min-width: 175px;">Last Name</th> 
                 <th style="min-width: 175px;">Email</th> 
+                <th style="min-width: 175px;">Password</th>
+                <th style="min-width: 175px;">Address ID</th>  
                 <th style="min-width: 175px;">Dob</th> 
+                <th style="min-width: 175px;">Department ID</th> 
            
                 <td colspan="2" align="center"> Action </td>
                 </thead>
@@ -27,10 +32,14 @@
                 for ($i=0; $i<count($Employee); $i++):
             ?>
             <tr>
+                <td><?php echo $Employee[$i]['tech_ID']?></td>
                 <td><?php echo $Employee[$i]['tech_fname']?></td>
+                <td><?php echo $Employee[$i]['tech_mname']?></td>
                 <td><?php echo $Employee[$i]['tech_lname']?></td>
                 <td><?php echo $Employee[$i]['tech_email']?></td>
+                <td><?php echo $Employee[$i]['address_id']?></td>
                 <td><?php echo $Employee[$i]['tech_dob']?></td>
+                <td><?php echo $Employee[$i]['DEP_ID']?></td>
                 <td colspan="2" align="center">
                 
                 </body>

@@ -3,7 +3,7 @@
 function getEmployee (){
     $arrayResult = array(); 
     $db = new SQLite3('C:\xampp\htdocs\Group-20-NAMRC\NAMRC\NAMRC.db');
-    $sql = "SELECT TS.tech_fname, TS.tech_lname, TS.tech_email, TS.tech_dob
+    $sql = "SELECT TS.tech_ID, TS.tech_fname, TS.tech_mname, TS.tech_lname, TS.tech_email, TS.tech_password, TS.address_id, TS.tech_dob, TS.DEP_ID
     FROM 'Technical Staff' TS
     INNER JOIN 'Operator Certification' OC ON TS.tech_ID = OC.tech_ID
     INNER JOIN Certifications Cer ON OC.certification_ID = Cer.certification_ID
