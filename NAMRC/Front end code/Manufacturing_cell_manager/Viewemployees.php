@@ -34,9 +34,9 @@
 
                 echo "<tr>";
             
-                for ($i = 0; $i < $result->numColumns(); $i++) {
+                for ($i = 0; $i < $Employee->numColumns(); $i++) {
             
-                    $columnName = $result->columnName($i);
+                    $columnName = $Employee->columnName($i);
             
                     echo "<th>$columnName</th>";
             
