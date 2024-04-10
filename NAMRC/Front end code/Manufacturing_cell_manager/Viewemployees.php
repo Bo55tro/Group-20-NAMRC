@@ -29,6 +29,8 @@
             include 'ViewemployeesSQL.php';
             $Employee = getEmployee();
 
+            for ($i=0; $i<count($Cell); $i++):
+
             foreach ($Employee as $row)
             ?>
             <tr>
@@ -46,6 +48,9 @@
                 </body>
                 </tr>
 
+                <?php
+                endfor;
+                ?>
                     
                 </table>
             </div>
