@@ -28,26 +28,7 @@
             include 'ViewemployeesSQL.php';
             $Employee = getEmployee();
 
-            
-
-            for ($i=0; $i<count($Employee); $i++):
-
-                echo "<table border='1'>";
-
-                echo "<tr>";
-            
-                for ($i = 0; $i < $Employee->numColumns(); $i++) {
-            
-                    $columnName = $Employee->columnName($i);
-            
-                    echo "<th>$columnName</th>";
-            
-                }
-            
-                    echo "<th>Update</th>";
-
-                    echo "</tr>";
-            
+            foreach ($Employee as $row)
             ?>
             <tr>
                 <td><?php echo $Employee[$i]['tech_ID']?></td>
@@ -58,14 +39,13 @@
                 <td><?php echo $Employee[$i]['address_id']?></td>
                 <td><?php echo $Employee[$i]['tech_dob']?></td>
                 <td><?php echo $Employee[$i]['DEP_ID']?></td>
+                <td>update</td>
                 <td colspan="2" align="center">
                 
                 </body>
                 </tr>
 
-                    <?php
-                    endfor;
-                    ?>
+                    
                 </table>
             </div>
         </div>
