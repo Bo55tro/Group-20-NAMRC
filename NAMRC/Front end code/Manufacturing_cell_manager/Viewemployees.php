@@ -43,6 +43,8 @@
                 }
             
                     echo "<th>Update</th>";
+
+                    echo "</tr>"
             ?>
             <tr>
                 <td><?php echo $Employee[$i]['tech_ID']?></td>
