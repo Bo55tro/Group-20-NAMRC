@@ -18,6 +18,7 @@
                 <th style="min-width: 75px;">Address ID</th>  
                 <th style="min-width: 75px;">Dob</th> 
                 <th style="min-width: 75px;">Department ID</th> 
+                <th style="min-width: 75px;">Update</th>
            
                 
                 </thead>
