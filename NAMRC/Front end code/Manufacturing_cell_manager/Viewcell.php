@@ -6,7 +6,7 @@
 
 <div class="row">
     <div class="col-5">
-        <table class="table table-bordered table-striped">
+        <table class="table table-bordered table-striped table-hover">
             <thead class="table-dark">
                 <th style="min-width: 175px;">Cell ID</th> 
                 <th style="min-width: 175px;">Cell Name</th> 
