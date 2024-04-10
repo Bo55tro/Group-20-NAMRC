@@ -1,5 +1,5 @@
 <!-- Viewing done by Ariba !-->
-<link rel="stylesheet" href="../site.css"/>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <nav class="navbar">
 <ul>
         <li><a href="HS_Home.php">Back</a></li>

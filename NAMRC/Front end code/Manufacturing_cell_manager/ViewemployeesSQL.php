@@ -1,4 +1,5 @@
 <!-- Viewing done by Ariba !-->
+
 <?php
 function getEmployee (){
     $arrayResult = array(); 
