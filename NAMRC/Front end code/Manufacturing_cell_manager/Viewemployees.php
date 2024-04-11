@@ -46,8 +46,9 @@
                 <td><a href="MCM_Update.php?tech_ID=<?php echo $row['tech_ID'];?>">Update</a></td>
                 <td colspan="2" align="center">
                 
-                </body>
                 </tr>
+                </body>
+                
 
                 <?php
                 endfor;
