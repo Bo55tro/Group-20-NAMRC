@@ -43,8 +43,8 @@ body {
     left: 0;
     width: 100%;
     z-index: 1000;
-    min-height: 10%;
-    max-height: 10%;
+    min-height: 20%;
+    max-height: 20%;
 }
 
 .navbar ul {
