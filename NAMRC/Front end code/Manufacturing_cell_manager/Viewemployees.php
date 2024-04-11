@@ -26,28 +26,33 @@
            
                 
            
-                <?php
-include 'ViewemployeesSQL.php';
-$Employee = getEmployee();
+            <?php
+            include 'ViewemployeesSQL.php';
+            $Employee = getEmployee();
 
-foreach ($Employee as $row):
-?>
-<tr>
-    <td><?php echo $row['tech_ID']?></td>
-    <td><?php echo $row['tech_fname']?></td>
-    <td><?php echo $row['tech_mname']?></td>
-    <td><?php echo $row['tech_lname']?></td>
-    <td><?php echo $row['tech_email']?></td>
-    <td><?php echo $row['address_id']?></td>
-    <td><?php echo $row['tech_dob']?></td>
-    <td><?php echo $row['DEP_ID']?></td>
-    <td><a href="MCM_Update.php?tech_ID=<?php echo $row['tech_ID'];?>">Update</a></td>
-</tr>
+            for ($i=0; $i<count($Employee); $i++):
+
+            foreach ($Employee as $row)
+            ?>
+            <tr>
+                <td><?php echo $Employee[$i]['tech_ID']?></td>
+                <td><?php echo $Employee[$i]['tech_fname']?></td>
+                <td><?php echo $Employee[$i]['tech_mname']?></td>
+                <td><?php echo $Employee[$i]['tech_lname']?></td>
+                <td><?php echo $Employee[$i]['tech_email']?></td>
+                <td><?php echo $Employee[$i]['tech_password']?></td>
+                <td><?php echo $Employee[$i]['address_id']?></td>
+                <td><?php echo $Employee[$i]['tech_dob']?></td>
+                <td><?php echo $Employee[$i]['DEP_ID']?></td>
+                <td><a href="MCM_Update.php?tech_ID=<?php echo $Employee[$i]['tech_ID'];?>">Update</a></td>
+                <td colspan="2" align="center">
+                
+                </tr>
                 </body>
                 
 
                 <?php
-                endforeach;
+                endfor;
                 ?>
                     
                 </table>
