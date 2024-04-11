@@ -5,8 +5,7 @@
 <div class="container pb-5">
     <main role="main" class="pb-3">
         <h2>View Cells:</h2><br>
-</link>
-
+        
 <div class="row">
     <div class="col-5">
         <table class="table table-bordered table-striped table-hover">
