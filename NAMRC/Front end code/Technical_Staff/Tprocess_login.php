@@ -77,4 +77,5 @@ if (isset($_POST["email"])) {
 
     echo json_encode(array("success" => true, "data" => $data));
 }
+var_dump($_POST);
 ?>
