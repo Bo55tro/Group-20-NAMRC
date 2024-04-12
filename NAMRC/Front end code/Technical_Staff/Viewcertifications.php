@@ -5,7 +5,6 @@
         <li><a href="Technical_Home.php">Back</a></li>
         <li><a href="Technical_view.php">View employees</a></li>
         <li><a href="Technical_Viewcell.php">View cells</a></li>
-        <li><a href="HS_Addcertification.php">Add certification & training</a></li>
         <li class="right-link"><a href="../Home.html">Logout</a></li>
     </ul>
 </nav>

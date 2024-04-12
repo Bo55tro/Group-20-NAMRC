@@ -41,7 +41,7 @@
             </div>
         </div>
     </main>
-    <div class= "tablelink">Press the "Next" icon to view the list of certifications. <a href="../Technical_Staff/Viewcertifications.php">Next</a></div>
+    <div class= "tablelink">Press the "Next" icon to view the list of certifications. <a href="../Technical_Staff/Technical_Viewcertificate.php">Next</a></div>
 
 
 </div>
