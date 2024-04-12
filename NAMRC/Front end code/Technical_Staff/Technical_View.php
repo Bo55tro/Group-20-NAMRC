@@ -1,6 +1,16 @@
 <?php
+session_start();
+
+// Check if user is logged in
+if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
+    header("Location: technical_login.php"); // Redirect to login page if not logged in
+    exit();
+}
+
+// Include viewemployees.php to display the view employees table
 include('C:\xampp\htdocs\Group-20-NAMRC\NAMRC\Front end code\Technical_Staff\Viewemployees.php');
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

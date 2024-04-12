@@ -20,6 +20,7 @@ $result = $stmt->execute();
 if ($row = $result->fetchArray(SQLITE3_ASSOC)) {
     if ($row['tech_password'] === $password) {
         $_SESSION['logged_in'] = true;
+        $_SESSION['email'] = $email; // Store email in session
         header("Location: Technical_Home.php");
         exit();
     } else {
