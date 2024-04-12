@@ -1,10 +1,6 @@
 <!-- Javascript coded to retrieve technical staff trainings and certifications - ariba -->
 <?php
 
-if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
-    header("Location: Tprocess_login.php");
-    exit();
-}
 
 $email = $_SESSION['email']; // Retrieve email from session
 
