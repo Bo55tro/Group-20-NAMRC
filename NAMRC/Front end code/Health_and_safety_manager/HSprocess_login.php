@@ -13,6 +13,7 @@ $email = $_POST["email"];
 $password = $_POST["password"];
 
 // SQL query to select the emails from the table 
+
 $stmt = $db->prepare("SELECT * FROM 'Health and Safety Managers, Officers' WHERE HSM_email = :email"); //done for ya ariba
 $stmt->bindValue(':email', $email, SQLITE3_TEXT);
 $result = $stmt->execute();
