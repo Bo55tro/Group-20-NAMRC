@@ -2,7 +2,7 @@
 <?php
 
 if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
-    header("Location: Technical_Login");
+    header("Location: Technical_Login.php");
     exit();
 }
 
