@@ -2,9 +2,7 @@
 
 $db = new SQLite3('C:\xampp\htdocs\Group-20-NAMRC\NAMRC\NAMRC.db');
 
-
-$email = $_POST["email"];
-
+var_dump($_POST["email"]);
 
 // SQL query to select training and certifications based on email
 $stmt = $db->prepare("SELECT `Technical Staff`.`tech_fname`, `Technical Staff`.`tech_lname`, `Training`.`training_name`
