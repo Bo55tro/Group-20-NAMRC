@@ -1,59 +1,37 @@
-<!-- Javascript coded to retrieve technical staff trainings and certifications - ariba -->
 <?php
-// Check if email is set in the session
-if (!isset($_SESSION['email'])) {
-    // Handle the case where email is not set in the session
-    echo "Email not found in session.";
+session_start();
+
+// Check if user is logged in
+if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
+    echo json_encode(array("success" => false, "message" => "User is not logged in."));
     exit();
 }
-// if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
-//     header("Location: Technical_Login.php");
-//     exit();
-// }
 
-$email = $_SESSION['email']; // Retrieve email from session
+$db = new SQLite3('C:\xampp\htdocs\Group-20-NAMRC\NAMRC\NAMRC.db');
 
+// Check if connection was successful
+if (!$db) {
+    echo json_encode(array("success" => false, "message" => "Connection to database failed."));
+    exit();
+}
+
+$email = $_POST["email"];
+
+// SQL query to select training and certifications based on email
+$stmt = $db->prepare("SELECT Technical Staff.tech_fname, Technical Staff.tech_lname, Training.training_name
+FROM Technical Staff
+INNER JOIN Operator Training ON (Technical Staff.tech_ID = Operator Training.tech_ID)
+INNER JOIN Training ON (Operator Training.training_ID = Training.training_ID)
+WHERE Technical Staff.tech_email = :email;");
+$stmt->bindValue(':email', $email, SQLITE3_TEXT);
+$result = $stmt->execute();
+
+$data = array();
+while ($row = $result->fetchArray(SQLITE3_ASSOC)) {
+    $data[] = $row;
+}
+
+$db->close();
+
+echo json_encode(array("success" => true, "data" => $data));
 ?>
-
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Technical Employees</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!--W3Schools script for ajax--> <!--needs to be referenced-->
-    <script>
-    $(document).ready(function() {
-        var staff_email = "<?php echo $email; ?>"; //gets the email from technical staff login 
-
-        $.ajax({
-            url: "process_staff_data.php",
-            type: "POST",
-            dataType: "json",
-            data: { email: staff_email },
-            success: function(response) {
-                if (response.success) {
-                    var staff_data = response.data;
-                    var html = "<h2>Your Training & Certifications:</h2>";
-                    staff_data.forEach(function(item) {
-                        html += "Training: " + item.training + ", Certifications: " + item.certifications + "<br>";                        
-                    });
-                    $("#staff_data").html(html);
-                } else {
-                    $("#staff_data").html("Error retrieving staff data."); 
-                }
-            },
-            error: function(xhr, status, error) {
-                console.error("Error: ", error);
-                $("#staff_data").html("An error occurred while processing your request.");
-            }
-        });
-    });
-    </script>
-    </head>
-    <body>
-        <div id="staff_data"></div>
-        <?php include 'C:\xampp\htdocs\Group-20-NAMRC\NAMRC\Front end code\Technical_Staff\Viewemployees.php'; ?>
-    </body>
-    </html>
-
-
-

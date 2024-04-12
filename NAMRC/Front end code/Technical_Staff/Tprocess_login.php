@@ -20,7 +20,7 @@ $result = $stmt->execute();
 if ($row = $result->fetchArray(SQLITE3_ASSOC)) {
     if ($row['tech_password'] === $password) {
         $_SESSION['logged_in'] = true;
-        header("Location: Technical_Home.php");
+        header("Location: Viewemployees.php");
         exit();
     } else {
         echo "Invalid username or password";
