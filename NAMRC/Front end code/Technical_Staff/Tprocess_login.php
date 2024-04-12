@@ -2,14 +2,15 @@
 <?php
 session_start();
 
-$db = new SQLite3('C:\xampp\htdocs\Group-20-NAMRC\NAMRC\NAMRC.db');
-
-// Check if connection was successful
-if (!$db) {
-    die("Connection failed: " . $db->lastErrorMsg());
+// Check if user is logged in and email is set in the session
+if (!isset($_SESSION['logged_in']) || !isset($_SESSION['email'])) {
+    // Redirect the user to the login page or display an error message
+    header("Location: Technical_Login.php");
+    exit();
 }
 
-$email = $_POST["email"];
+// Retrieve the email address from the session
+$email = $_SESSION['email'];
 $password = $_POST["password"];
 
 // SQL query to select the emails from the table 
