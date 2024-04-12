@@ -1,6 +1,11 @@
 <!-- Javascript coded to retrieve technical staff trainings and certifications - ariba -->
 <?php
-
+// Check if email is set in the session
+if (!isset($_SESSION['email'])) {
+    // Handle the case where email is not set in the session
+    echo "Email not found in session.";
+    exit();
+}
 if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
     header("Location: Technical_Login.php");
     exit();
