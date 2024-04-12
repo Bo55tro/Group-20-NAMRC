@@ -1,6 +1,6 @@
 <?php
 session_start();
-
+var_dump($_POST);
 // Check if connection was successful
 $db = new SQLite3('C:\xampp\htdocs\Group-20-NAMRC\NAMRC\NAMRC.db');
 
@@ -77,5 +77,4 @@ if (isset($_POST["email"])) {
 
     echo json_encode(array("success" => true, "data" => $data));
 }
-var_dump($_POST);
 ?>
