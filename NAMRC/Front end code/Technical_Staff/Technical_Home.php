@@ -1,5 +1,5 @@
 <?php
-include('C:\xampp\htdocs\Group-20-NAMRC\NAMRC\Front end code\Technical_Staff\Viewemployees.php');
+include('C:\xampp\htdocs\Group-20-NAMRC\NAMRC\Front end code\Technical_Staff\Viewcertifications.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
