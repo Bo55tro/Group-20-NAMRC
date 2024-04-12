@@ -3,7 +3,7 @@ session_start();
 
 // Check if user is logged in
 if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
-    header("Location: technical_login.php"); // Redirect to login page if not logged in
+    header("Location: Technical_Login.php"); // Redirect to login page if not logged in
     exit();
 }
 

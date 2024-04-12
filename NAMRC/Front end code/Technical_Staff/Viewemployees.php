@@ -2,11 +2,6 @@
 
 $db = new SQLite3('C:\xampp\htdocs\Group-20-NAMRC\NAMRC\NAMRC.db');
 
-// Check if connection was successful
-if (!isset($_POST["email"])) {
-    echo json_encode(array("success" => false, "message" => "Email address is required."));
-    exit();
-}
 
 $email = $_POST["email"];
 

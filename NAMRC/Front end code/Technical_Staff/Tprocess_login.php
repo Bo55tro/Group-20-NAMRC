@@ -4,7 +4,6 @@ session_start();
 
 $db = new SQLite3('C:\xampp\htdocs\Group-20-NAMRC\NAMRC\NAMRC.db');
 
-
 // Check if connection was successful
 if (!$db) {
     die("Connection failed: " . $db->lastErrorMsg());
