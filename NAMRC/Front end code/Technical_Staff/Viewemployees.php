@@ -3,7 +3,7 @@
 $db = new SQLite3('C:\xampp\htdocs\Group-20-NAMRC\NAMRC\NAMRC.db');
 
 
-$email = $_POST["email"];
+$email = $_POST[":email"];
 
 
 // SQL query to select training and certifications based on email
