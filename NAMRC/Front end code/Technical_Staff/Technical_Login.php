@@ -21,7 +21,7 @@
             <form method="post" action="Tprocess_login.php">
                 <div>
                 <div class="emaillabel">
-                        <input type="text" id="Email" name="email">
+                        <input type="text" id="email" name="email">
                     </div>
                     <div class="passwordlabel">
                         <input type="password" id="password" name="password">
