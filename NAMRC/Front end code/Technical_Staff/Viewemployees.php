@@ -6,10 +6,10 @@ if (!isset($_SESSION['email'])) {
     echo "Email not found in session.";
     exit();
 }
-if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
-    header("Location: Technical_Login.php");
-    exit();
-}
+// if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
+//     header("Location: Technical_Login.php");
+//     exit();
+// }
 
 $email = $_SESSION['email']; // Retrieve email from session
 
