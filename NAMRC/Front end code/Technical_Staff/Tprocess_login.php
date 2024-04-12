@@ -1,18 +1,13 @@
+<!-- processing the HSM database details and created a SQL query to select all details - Done by ARIBA -->
 <?php
 session_start();
-var_dump($_POST);
-// Check if connection was successful
+
 $db = new SQLite3('C:\xampp\htdocs\Group-20-NAMRC\NAMRC\NAMRC.db');
 
-if (!$db) {
-    echo json_encode(array("success" => false, "message" => "Connection to database failed."));
-    exit();
-}
 
-// Ensure email is provided
-if (!isset($_POST["email"])) {
-    echo json_encode(array("success" => false, "message" => "Email address is required."));
-    exit();
+// Check if connection was successful
+if (!$db) {
+    die("Connection failed: " . $db->lastErrorMsg());
 }
 
 $email = $_POST["email"];
@@ -31,50 +26,10 @@ if ($row = $result->fetchArray(SQLITE3_ASSOC)) {
         exit();
     } else {
         echo "Invalid username or password";
-        exit();
     }
 } else {
     echo "Email not recognized as a Technical Staff";
-    exit();
 }
 
 $db->close();
-?>
-
-<?php
-// This block of code will only execute if the email address is provided
-if (isset($_POST["email"])) {
-    $db = new SQLite3('C:\xampp\htdocs\Group-20-NAMRC\NAMRC\NAMRC.db');
-
-    // Check if connection was successful
-    if (!$db) {
-        echo json_encode(array("success" => false, "message" => "Connection to database failed."));
-        exit();
-    }
-
-    $email = $_POST["email"];
-
-    // SQL query to select training and certifications based on email
-    $stmt = $db->prepare("SELECT `Technical Staff`.`tech_fname`, `Technical Staff`.`tech_lname`, `Training`.`training_name`
-    FROM `Technical Staff`
-    INNER JOIN `Operator Training` ON (`Technical Staff`.`tech_ID` = `Operator Training`.`tech_ID`)
-    INNER JOIN `Training` ON (`Operator Training`.`training_ID` = `Training`.`training_ID`)
-    WHERE `Technical Staff`.`tech_email` = :email;");
-    $stmt->bindValue(':email', $email, SQLITE3_TEXT);
-    $result = $stmt->execute();
-
-    $data = array();
-    if ($result) {
-        while ($row = $result->fetchArray(SQLITE3_ASSOC)) {
-            $data[] = $row;
-        }
-    } else {
-        echo json_encode(array("success" => false, "message" => "Failed to execute SQL query."));
-        exit();
-    }
-
-    $db->close();
-
-    echo json_encode(array("success" => true, "data" => $data));
-}
 ?>
