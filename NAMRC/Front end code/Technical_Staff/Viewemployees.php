@@ -1,14 +1,5 @@
 <!-- Javascript coded to retrieve technical staff trainings and certifications - ariba -->
-<?php
 
-if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
-    header("Location: Technical_Login.php");
-    exit();
-}
-
-$email = $_SESSION['email']; // Retrieve email from session
-
-?>
 
 <!DOCTYPE html>
 <html>
