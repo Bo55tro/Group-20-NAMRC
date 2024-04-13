@@ -11,7 +11,7 @@
     <ul>
         <li><a href="HS_View.php">View employees</a></li>
         <li><a href="HS_Viewcell.php">View cells</a></li>
-        <li><a href="HS_Viewtraining.php">View available trainings and certifications</a></li>
+        <li><a href="HS_Viewtraining.php">View available trainings/certifications</a></li>
         <li><a href="HS_Addcertification.php">Add certification & training</a></li> <!-- changed to training as well to make it in one label - done by ariba !-->
         <li class="right-link"><a href="../Home.html">Logout</a></li>
     </ul>
