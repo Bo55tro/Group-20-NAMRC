@@ -43,7 +43,7 @@ $db->close();
     <link rel="stylesheet" href="site.css">
 </head>
 <body>
-    <h1>Welcome, <?php echo $technicalStaffData[0]['tech_fname'] . ' ' - $technicalStaffData[0]['tech_lname']; ?>!</h1>
+    <h1>Welcome, <?php echo $technicalStaffData[0]['tech_fname'] . ' ' . $technicalStaffData[0]['tech_lname']; ?>!</h1>
     <p>Your training: <?php foreach ($technicalStaffData as $training) { echo $training['training_name'] . ', '; } ?></p>
     </body>
 </html>
