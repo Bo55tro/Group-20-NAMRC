@@ -50,8 +50,8 @@ $db->close();
     <p>Your name: <?php echo $technicalStaffData[0]['tech_fname'] . ' ' . $technicalStaffData[0]['tech_mname'] . ' ' . $technicalStaffData[0]['tech_lname']; ?></p>
     
     <p>Your trainings: <?php 
-        $trainings = array_unique(array_column($technicalStaffData, 'training_name'));
-        echo implode(', ', $trainings);
+        $trainings = array_unique(array_column($technicalStaffData, 'training_name')); //array unique removes duplicates  
+        echo implode(', ', $trainings); //implodes combines all the unique training names into a single string with commas to break them 
     ?></p>
     
     <p>Your certifications: <?php 
