@@ -26,17 +26,27 @@ WHERE `Technical Staff`.`tech_email` = :email;");
 $stmt->bindValue(':email', $email, SQLITE3_TEXT);
 $result = $stmt->execute();
 
-$data = array();
-if ($result) {
-    while ($row = $result->fetchArray(SQLITE3_ASSOC)) {
-        $data[] = $row;
-    }
-} else {
-    echo json_encode(array("success" => false, "message" => "Failed to execute SQL query."));
-    exit();
+$technicalStaffData = [];
+while ($row = $result->fetchArray(SQLITE3_ASSOC)){
+    $technicalStaffData[]=$row;
 }
 
 $db->close();
 
+
 echo json_encode(array("success" => true, "data" => $data));
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Technical Staff Details</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="site.css">
+</head>
+<body>
+    <h1>Welcome, <?php echo $technicalStaffData[0]['tech_fname'] . ' ' - $technicalStaffData[0]['tech_lname']; ?>!</h1>
+    <p>Your training: <?php foreach ($technicalStaffData as $training) { echo $training['training_name'] . ', '; } ?></p>
+    </body>
+</html>
