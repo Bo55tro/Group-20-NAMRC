@@ -40,11 +40,11 @@ $db->close();
     <title>Technical Staff Details</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="site.css">
+    <!-- <link rel="stylesheet" href="site.css"> -->
 </head>
 <body>
-    <h1>Welcome, <?php echo $technicalStaffData[0]['tech_fname'] . ' ' . $technicalStaffData[0]['tech_lname']; ?>!</h1>
-    <p>Your name: <?php echo $technicalStaffData[0]['tech_fname'] . ' ' . $technicalStaffData[0]['tech_lname']; ?></p>
+    <h1>Welcome, <?php echo $technicalStaffData[0]['tech_fname'] . ' ' . $technicalStaffData[0]['tech_mname'] . ' ' . $technicalStaffData[0]['tech_lname']; ?>!</h1>
+    <p>Your name: <?php echo $technicalStaffData[0]['tech_fname'] . ' ' . $technicalStaffData[0]['tech_mname'] . ' ' . $technicalStaffData[0]['tech_lname']; ?></p>
     <p>Your training: <?php foreach ($technicalStaffData as $training) { echo $training['training_name'] . ', '; } ?></p>
 </body>
 </html>
