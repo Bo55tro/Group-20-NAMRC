@@ -18,10 +18,11 @@ if (!$db) {
 }
 
 // SQL query to select training and certifications based on email
-$stmt = $db->prepare("SELECT `Technical Staff`.`tech_fname`, `Technical Staff`.`tech_mname`, `Technical Staff`.`tech_lname`, `Training`.`training_name`
+$stmt = $db->prepare("SELECT `Technical Staff`.`tech_fname`, `Technical Staff`.`tech_mname`, `Technical Staff`.`tech_lname`, `Training`.`training_name`, `Certification`.`certification_name`
 FROM `Technical Staff`
 INNER JOIN `Operator Training` ON (`Technical Staff`.`tech_ID` = `Operator Training`.`tech_ID`)
 INNER JOIN `Training` ON (`Operator Training`.`training_ID` = `Training`.`training_ID`)
+INNER JOIN `Certification` ON (`Technical Staff`.`tech_ID` = `Certification`.`tech_ID`)
 WHERE `Technical Staff`.`tech_email` = :email;");
 $stmt->bindValue(':email', $email, SQLITE3_TEXT);
 $result = $stmt->execute();
