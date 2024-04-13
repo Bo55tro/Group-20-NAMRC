@@ -23,7 +23,7 @@ FROM `Technical Staff`
 INNER JOIN `Operator Training` ON (`Technical Staff`.`tech_ID` = `Operator Training`.`tech_ID`)
 INNER JOIN `Training` ON (`Operator Training`.`training_ID` = `Training`.`training_ID`)
 INNER JOIN `Operator Certification` ON (`Technical Staff`.`tech_ID` = `Operator Certification`.`tech_ID`)
-INNER JOIN `Certifications` ON (`Operator Certification`.`certification_ID` = `Certification`.`certification_ID`)
+INNER JOIN `Certifications` ON (`Operator Certification`.`certification_ID` = `Certifications`.`certification_ID`)
 WHERE `Technical Staff`.`tech_email` = :email;");
 
 $stmt->bindValue(':email', $email, SQLITE3_TEXT);
