@@ -17,8 +17,8 @@
                 
            
             <?php
-            include 'ViewemployeeSQL.php';
-            $Cell = getEmployee();
+            include 'ViewemployeesSQL.php';
+            $Cell = getEmployee ();
 
                 for ($i=0; $i<count($Cell); $i++):
             ?>
