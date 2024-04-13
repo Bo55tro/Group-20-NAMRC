@@ -18,7 +18,7 @@ if (!$db) {
 }
 
 // SQL query to select training and certifications based on email
-$stmt = $db->prepare("SELECT `Technical Staff`.`tech_fname`, `Technical Staff`.`tech_lname`, `Training`.`training_name`
+$stmt = $db->prepare("SELECT `Technical Staff`.`tech_fname`, `Technical Staff`.`tech_mname`, `Technical Staff`.`tech_lname`, `Training`.`training_name`
 FROM `Technical Staff`
 INNER JOIN `Operator Training` ON (`Technical Staff`.`tech_ID` = `Operator Training`.`tech_ID`)
 INNER JOIN `Training` ON (`Operator Training`.`training_ID` = `Training`.`training_ID`)
