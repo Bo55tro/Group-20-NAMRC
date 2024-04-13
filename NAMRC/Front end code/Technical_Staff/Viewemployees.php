@@ -22,7 +22,7 @@ $stmt = $db->prepare("SELECT `Technical Staff`.`tech_fname`, `Technical Staff`.`
 FROM `Technical Staff`
 INNER JOIN `Operator Training` ON (`Technical Staff`.`tech_ID` = `Operator Training`.`tech_ID`)
 INNER JOIN `Training` ON (`Operator Training`.`training_ID` = `Training`.`training_ID`)
-INNER JOIN `Certification` ON (`Technical Staff`.`tech_ID` = `Certification`.`tech_ID`)
+INNER JOIN `Certifications` ON (`Technical Staff`.`tech_ID` = `Certification`.`tech_ID`)
 WHERE `Technical Staff`.`tech_email` = :email;");
 $stmt->bindValue(':email', $email, SQLITE3_TEXT);
 $result = $stmt->execute();
