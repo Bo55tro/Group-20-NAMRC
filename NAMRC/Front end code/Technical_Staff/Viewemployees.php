@@ -44,8 +44,7 @@ $db->close();
 </head>
 <body>
     <h1>Welcome, <?php echo $technicalStaffData[0]['tech_fname'] . ' ' . $technicalStaffData[0]['tech_lname']; ?>!</h1>
-    <p>Your name: <?php foreach ($technicalStaffData as $names) { echo $names['tech_fname'] . ', '; } ?></p>
+    <p>Your name: <?php echo $technicalStaffData[0]['tech_fname'] . ' ' . $technicalStaffData[0]['tech_lname']; ?></p>
     <p>Your training: <?php foreach ($technicalStaffData as $training) { echo $training['training_name'] . ', '; } ?></p>
-
-    </body>
+</body>
 </html>
