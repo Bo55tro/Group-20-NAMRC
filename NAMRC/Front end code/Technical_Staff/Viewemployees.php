@@ -48,7 +48,15 @@ $db->close();
 <body>
     <h1>Welcome, <?php echo $technicalStaffData[0]['tech_fname'] . ' ' . $technicalStaffData[0]['tech_mname'] . ' ' . $technicalStaffData[0]['tech_lname']; ?>!</h1>
     <p>Your name: <?php echo $technicalStaffData[0]['tech_fname'] . ' ' . $technicalStaffData[0]['tech_mname'] . ' ' . $technicalStaffData[0]['tech_lname']; ?></p>
-    <p>Your trainings: <?php foreach ($technicalStaffData as $training) { echo $training['training_name'] . ', '; } ?></p>
-    <p>Your certifications: <?php foreach ($technicalStaffData as $certification) {echo $training['certification_name'] . ', '; } ?></p>
+    
+    <p>Your trainings: <?php 
+        $trainings = array_unique(array_column($technicalStaffData, 'training_name'));
+        echo implode(', ', $trainings);
+    ?></p>
+    
+    <p>Your certifications: <?php 
+        $certifications = array_unique(array_column($technicalStaffData, 'certification_name'));
+        echo implode(', ', $certifications);
+    ?></p>
 </body>
 </html>
