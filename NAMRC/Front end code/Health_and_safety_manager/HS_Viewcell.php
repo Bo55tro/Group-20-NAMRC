@@ -14,7 +14,7 @@ include('C:\xampp\htdocs\Group-20-NAMRC\NAMRC\Front end code\Health_and_safety_m
     <ul>
         <li><a href="HS_Home.php">Back</a></li>
         <li><a href="HS_View.php">View employees</a></li>
-        <li><a href="HS_Viewtraining.php">View available training </a></li>
+        <li><a href="HS_Viewtraining.php">View available training/certifications</a></li>
         <li><a href="HS_Addcertification.php">Add certification & training</a></li>
         <li class="right-link"><a href="../Home.html">Logout</a></li>
     </ul>

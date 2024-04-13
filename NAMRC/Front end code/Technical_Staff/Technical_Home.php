@@ -11,7 +11,7 @@
     <ul>
         <li><a href="Technical_View.php">View employees</a></li>
         <li><a href="Technical_Viewcell.php">View cells</a></li>
-        <li><a href="Technical_Viewtraining.php">View available training</a></li>
+        <li><a href="Technical_Viewtraining.php">View available training/certification</a></li>
         <li class="right-link"><a href="../Home.html">Logout</a></li>
     </ul>
 </nav>
