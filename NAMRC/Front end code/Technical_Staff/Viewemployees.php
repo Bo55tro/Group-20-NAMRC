@@ -32,9 +32,6 @@ while ($row = $result->fetchArray(SQLITE3_ASSOC)){
 }
 
 $db->close();
-
-
-echo json_encode(array("success" => true, "data" => $data));
 ?>
 
 <!DOCTYPE html>
