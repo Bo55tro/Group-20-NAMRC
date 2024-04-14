@@ -1,4 +1,12 @@
 <!-- Viewing done by Ariba !-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Nuclear AMRC</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../site.css"/>
+</head>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <nav class="navbar">
 <ul>
@@ -44,7 +52,7 @@
                         ?>
                     </tbody>
                 </table>
-                <p>Press the "Back" icon to view the list of trainings. <a href="../Health_and_safety_manager/HS_view.php">Back</a></p>
+                <p>Press the "Back" icon to view the list of trainings. <a href="../Health_and_safety_manager/HS_Viewtraining.php">Back</a></p>
             </div>
         </div>
     </main>
