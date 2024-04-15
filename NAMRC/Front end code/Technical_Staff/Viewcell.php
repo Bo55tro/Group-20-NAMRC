@@ -10,7 +10,8 @@
             <thead class="table-dark">
                 <th style="min-width: 175px;">Cell ID</th> 
                 <th style="min-width: 175px;">Cell Name</th> 
-           
+                <th style="min-width: 175px;">Manager First Name</th> 
+                <th style="min-width: 175px;">Manager Last Name</th> 
                 <td colspan="2" align="center"> Action </td>
                 </thead>
            
@@ -25,7 +26,8 @@
             <tr>
                 <td><?php echo $Cell[$i]['cell_ID']?></td>
                 <td><?php echo $Cell[$i]['cell_name']?></td>
-       
+                <td><?php echo $Cell[$i]['MCM_fname']?></td>
+                <td><?php echo $Cell[$i]['MCM_lname']?></td>
                 <td colspan="2" align="center">
                 
                 </body>
