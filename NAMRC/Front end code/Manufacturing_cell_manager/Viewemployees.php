@@ -4,6 +4,7 @@
 </body>
 <div class="container pb-5">
     <main role="main" class="pb-3">
+    <br><br><br><br>
         <h2>View Cells:</h2><br>
     
 <div class="row">
