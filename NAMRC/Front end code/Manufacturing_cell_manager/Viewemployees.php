@@ -96,7 +96,7 @@
                             <td><?php echo $MCM[$i]['MCM_password']?></td>
                             <td><?php echo $MCM[$i]['address_id']?></td>
                             <td><?php echo $MCM[$i]['MCM_dob']?></td>
-                            <td><a href="MCM_Update.php?MCM_ID=<?php echo $MCM[$i]['MCM_ID'];?>">Update</a></td>
+                            <td><a href="MCM_UpdateMCM.php?MCM_ID=<?php echo $MCM[$i]['MCM_ID'];?>">Update</a></td>
 
 
                         </tr>
