@@ -23,14 +23,14 @@ if (isset($_GET['DM_ID'])) {
     $staff_id = $_GET['DM_ID'];
 
     try {
-        $stmt_staff = $db->prepare("SELECT * FROM \"Department manager\" WHERE DM_ID = :DM_ID");
+        $stmt_staff = $db->prepare("SELECT * FROM \"Department Managers\" WHERE DM_ID = :DM_ID");
         $stmt_staff->bindValue(':DM_ID', $staff_id, SQLITE3_TEXT);
         $result_staff = $stmt_staff->execute();
         $staffData = $result_staff->fetchArray(SQLITE3_ASSOC);
 
         if ($staffData) {
             if (isset($_POST['submit'])) {
-                $update_staff = $db->prepare("UPDATE \"Department Manager\" SET DM_fname = :DM_fname, DM_mname = :DM_mname, DM_lname = :DM_lname, DM_email = :DM_email, DM_password = :DM_password, DM_dob = :DM_dob  WHERE DM_ID = :DM_ID");
+                $update_staff = $db->prepare("UPDATE \"Department Managers\" SET DM_fname = :DM_fname, DM_mname = :DM_mname, DM_lname = :DM_lname, DM_email = :DM_email, DM_password = :DM_password, DM_dob = :DM_dob  WHERE DM_ID = :DM_ID");
                 $update_staff->bindValue(':DM_fname', $_POST['UPDATEFNAME'], SQLITE3_TEXT);
                 $update_staff->bindValue(':DM_mname', $_POST['UPDATEMNAME'], SQLITE3_TEXT);
                 $update_staff->bindValue(':DM_lname', $_POST['UPDATELNAME'], SQLITE3_TEXT);
