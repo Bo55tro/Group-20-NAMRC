@@ -86,7 +86,7 @@
                             <td><?php echo $MCM[$i]['MCM_password']?></td>
                             <td><?php echo $MCM[$i]['address_id']?></td>
                             <td><?php echo $MCM[$i]['MCM_dob']?></td>
-                            <td><a href="HS_Update.php?MCM_ID=<?php echo $MCM[$i]['MCM_ID'];?>">Update</a></td>
+                            <td><a href="HS_UpdateMCM.php?MCM_ID=<?php echo $MCM[$i]['MCM_ID'];?>">Update</a></td>
 
 
                         </tr>
@@ -132,7 +132,7 @@
                             <td><?php echo $DM[$i]['DM_password']?></td>
                             <td><?php echo $DM[$i]['address_id']?></td>
                             <td><?php echo $DM[$i]['DM_dob']?></td>
-                            <td><a href="HS_Update.php?DM_ID=<?php echo $DM[$i]['DM_ID'];?>">Update</a></td>
+                            <td><a href="HS_UpdateDM.php?DM_ID=<?php echo $DM[$i]['DM_ID'];?>">Update</a></td>
 
 
                         </tr>
@@ -177,7 +177,7 @@
                             <td><?php echo $HSM[$i]['HSM_password']?></td>
                             <td><?php echo $HSM[$i]['address_id']?></td>
                             <td><?php echo $HSM[$i]['HSM_dob']?></td>
-                            <td><a href="HS_Update.php?HSM_ID=<?php echo $HSM[$i]['HSM_ID'];?>">Update</a></td>
+                            <td><a href="HS_UpdateHS.php?HSM_ID=<?php echo $HSM[$i]['HSM_ID'];?>">Update</a></td>
 
 
                         </tr>
