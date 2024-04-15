@@ -5,7 +5,7 @@
 <div class="container pb-5">
     <main role="main" class="pb-3">
     <br><br><br><br>
-        <h2>View Cells:</h2><br>
+        <h2>View Technical Staff:</h2><br>
     
 <div class="row">
     <div class="col-5">
