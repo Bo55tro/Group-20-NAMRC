@@ -26,7 +26,7 @@
                     </thead>
                     <tbody>
                         <?php
-                        require_once 'ViewemployeesSQL.php';
+                        require_once 'ViewemployeeSQL.php';
 
                         $Employee = getEmployee();
 
