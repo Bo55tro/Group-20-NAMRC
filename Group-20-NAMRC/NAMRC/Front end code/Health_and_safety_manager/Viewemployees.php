@@ -42,6 +42,7 @@
                             <td><?php echo $Employee[$i]['address_id']?></td>
                             <td><?php echo $Employee[$i]['tech_dob']?></td>
                             <td><?php echo $Employee[$i]['DEP_ID']?></td>
+                            <td><a href="deleteemployees.php?tech_ID=<?php echo $Employee[$i]['tech_ID'];?>">Delete</a></td> 
                             <td><a href="HS_Update.php?tech_ID=<?php echo $Employee[$i]['tech_ID'];?>">Update</a></td>
                         </tr>
                         <?php
