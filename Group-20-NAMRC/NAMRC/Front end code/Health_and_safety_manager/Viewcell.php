@@ -29,6 +29,7 @@
                 <td><?php echo $Cell[$i]['MCM_fname']?></td>
                 <td><?php echo $Cell[$i]['MCM_lname']?></td>
                 <td colspan="2" align="center">
+                <a href="deletecell.php?cell_ID=<?php echo $Training[$i]['cell_ID']; ?>"> Delete</a><td>
                 
                 </body>
                 </tr>
